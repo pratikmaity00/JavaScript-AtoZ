@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text" placeholder="write">
+    <h1>Total Character : <span>20</span></h1>
+    <script>
+        let inp = document.querySelector('#text');
+        let span = document.querySelector('span');
+        inp.addEventListener('input',()=>{
+            // let len = inp.value.length;
+            let len = 20 - inp.value.length;
+            span.textContent = len;
+            if(len < 0) {
+                span.style.color = "red";
+            }else {
+                span.style.color = "black";
+            }
+        });
+    </script>
+</body>
+</html>

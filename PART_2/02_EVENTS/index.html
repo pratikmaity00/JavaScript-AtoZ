@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events and Event Handling</title>
+  </head>
+  <body>
+    <h1>Click Me</h1>
+
+    <input type="text" name="" id="search" placeholder="search" />
+
+    <h3 id="device">select Device</h3>
+    <select>
+      <option selected disabled>choose one</option>
+      <option value="samsung">samsung</option>
+      <option value="mi">Xaomi</option>
+      <option value="apple">Iphone</option>
+    </select>
+
+    <div
+      class="div1"
+      style="
+        width: 500px;
+        height: 500px;
+        background-color: cadetblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <p style="font-size: 20px; color: bisque" class="p1">Enter A key</p>
+    </div>
+
+    <!-- custom file upload -->
+    <div class="file" style="margin-top: 30px">
+      <input type="file" name="file" id="file" style="display: none" />
+      <div
+        class="btn"
+        style="
+          background-color: chocolate;
+          color: white;
+          padding: 10px 20px;
+          display: inline-block;
+        "
+      >
+        Upload File
+      </div>
+    </div>
+
+    <!-- mouseover and out -->
+    <div class="redBox" style="width: 200px;height: 200px; background-color: red; margin-top: 10px;"></div>
+    
+    <!-- mousemove -->
+    <!-- <div class="movediv" style="width: 60px;height: 60px; background-color: rgb(217, 255, 0); position: absolute;"></div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

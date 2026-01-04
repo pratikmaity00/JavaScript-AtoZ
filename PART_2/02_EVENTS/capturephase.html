@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            width: 800px;
+            height: 500px;
+            background-color: coral;
+        }
+        .b {
+            width: 70%;
+            height: 70%;
+            background-color: cornsilk;
+        }
+        .c {
+            width: 50%;
+            height: 50%;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <button>Click Me</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('click',()=>{
+            console.log("Button Clicked")
+        })
+        document.querySelector('.c').addEventListener('click',()=>{
+            console.log("C Clicked")
+        },true)
+        document.querySelector('.b').addEventListener('click',()=>{
+            console.log("B Clicked")
+        })
+        document.querySelector('.a').addEventListener('click',()=>{
+            console.log("A Clicked")
+        },true)
+    </script>
+</body>
+</html>
