@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loading">
+        <p>Background Color Changer App Loading.....</p>
+        <ul>
+            <li><i class="fa-solid fa-circle fa-beat fa-lg" style="color: #FFD43B;"></i></li>
+            <li><i class="fa-solid fa-circle fa-beat fa-lg" style="color: #63E6BE;"></i></li>
+            <li><i class="fa-solid fa-circle fa-beat fa-lg" style="color: #74C0FC;"></i></li>
+            <li><i class="fa-solid fa-circle fa-beat fa-lg" style="color: #B197FC;"></i></li>
+            <li><i class="fa-solid fa-circle fa-beat fa-lg" style="color: #f335e3;"></i></li>
+        </ul>
+    </div>
+
+    <!-- App -->
+    <section class="app">
+        <div class="container">
+            <h1 class="center mb-40 head">NOW BACKGROUND COLOR DEPENDS ON YOUR <span>MOOD</span></h1>
+            <p class="center mb-20"><u>Ready Your Custom Color</u></p>
+            <div class="customColor center mb-40">
+                <input type="color" id="customColor">
+                <div class="colorPicker">Make Your Own Color</div>
+            </div>
+            <div class="btn center">
+                <button>Restet Background <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
