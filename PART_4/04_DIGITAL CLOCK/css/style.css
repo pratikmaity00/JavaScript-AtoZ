@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper {
+    border: 1px dotted black;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.wrapper:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.174);
+    transform: scale(1.1);
+}
+.banner {
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.clock {
+    background-color: rgb(244, 125, 28);
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.date {
+    background-color: rgb(223, 18, 254);
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
