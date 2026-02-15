@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toast Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button onclick="showToast('Login Successful ✅', 'success')">
+    Show Success
+  </button>
+
+  <button onclick="showToast('Something went wrong ❌', 'error')">
+    Show Error
+  </button>
+  
+  <button onclick="showToast('⚠ Warning', 'warning')">
+    Show warning
+  </button>
+
+  <button onclick="showToast('ℹ Info', 'info')">
+    Show Info
+  </button>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
