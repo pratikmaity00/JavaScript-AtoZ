@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+    --color-skyBlue: #e8eefd;
+    --color-darkBlue: #4c3aed;
+}
+@utility container {
+    max-width: 1000px;
+    margin: auto;
+    padding-inline: 16px;
+}

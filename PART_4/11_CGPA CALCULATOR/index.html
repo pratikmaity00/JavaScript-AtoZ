@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-skyBlue">
+    <header class="mb-8 pt-8 sm:pt-12">
+        <div class="container">
+            <div class="flex flex-col justify-center items-center gap-3 text-center">
+                <h1 class="text-4xl font-bold text-gray-700 flex flex-col sm:flex-row items-center justify-center gap-4 ">
+                    <i class="ri-graduation-cap-line text-darkBlue text-5xl font-medium"></i>
+                    <span>University Marks Calculator</span>
+                </h1>
+                <p class="text-slate-500">Calculate your obtained marks, total marks, and percentage</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="input" class="mb-8">
+            <div class="container">
+                <div class="bg-white rounded-2xl shadow-[0_10px_20px_rgba(0,0,0,0.3)] p-4 sm:p-6 md:p-12" id="calc-div">
+                    <div class="flex flex-col sm:flex-row gap-10 mb-10">
+                        <div class="flex flex-col gap-5 flex-1">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center gap-2">
+                                    <div class="bg-skyBlue w-[45px] h-[45px] rounded-full flex justify-center items-center text-darkBlue font-bold text-xl"><span>1</span></div>
+                                    <h2 class="text-2xl font-semibold text-black">Odd Semester</h2>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label class="text-lg font-semibold text-gray-600" for="ls-sub">Total Subjects</label>
+                                <input class="rounded-xl border-2 border-gray-300 p-3 focus:outline-darkBlue focus:bg-skyBlue transition" type="number" name="toatl subject in odd sem" id="ls-sub" placeholder="Enter Number of Subjects">
+                                <p class="error-msg text-red-500 text-sm mt-1 font-semibold hidden"></p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label class="text-lg font-semibold text-gray-600" for="ls-gpa">CGPA (0-10)</label>
+                                <input class="rounded-xl border-2 border-gray-300 p-3 focus:outline-darkBlue focus:bg-skyBlue transition" type="number" name="toatl subject in odd sem" id="ls-gpa" placeholder="Enter CGPA/SGPA">
+                                <p class="error-msg text-red-500 text-sm mt-1 font-semibold hidden"></p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-5 flex-1">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center gap-2">
+                                    <div class="bg-pink-100 w-[45px] h-[45px] rounded-full flex justify-center items-center text-pink-500 font-bold text-xl"><span>2</span></div>
+                                    <h2 class="text-2xl font-semibold text-black">Even Semester</h2>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label class="text-lg font-semibold text-gray-600" for="rs-sub">Total Subjects</label>
+                                <input class="rounded-xl border-2 border-gray-300 p-3 focus:outline-darkBlue focus:bg-skyBlue transition" type="number" name="toatl subject in odd sem" id="rs-sub" placeholder="Enter Number of Subjects">
+                                <p class="error-msg text-red-500 text-sm mt-1 font-semibold hidden"></p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <label class="text-lg font-semibold text-gray-600" for="rs-gpa">CGPA (0-10)</label>
+                                <input class="rounded-xl border-2 border-gray-300 p-3 focus:outline-darkBlue focus:bg-skyBlue transition" type="number" name="toatl subject in odd sem" id="rs-gpa" placeholder="Enter CGPA/SGPA">
+                                <p class="error-msg text-red-500 text-sm mt-1 font-semibold hidden"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center gap-5">
+                        <button id="btn-cal" class="px-7 py-3 bg-darkBlue rounded-xl text-white font-semibold text-lg hover:bg-indigo-800 hover:shadow-xl transition-all" type="submit">
+                            <i class="ri-calculator-line font-normal"></i>
+                            <span>Calculate</span>
+                        </button>
+                        <button id="res-btn" class="px-7 py-3 bg-gray-200 rounded-xl text-gray-600 font-semibold text-lg hover:bg-gray-300 transition" type="reset">Reset</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="instructions" class="mb-8">
+            <div class="container">
+                <div class="bg-white rounded-2xl shadow-[0_3px_10px_rgba(0,0,0,0.2)] p-4 sm:p-6">
+                    <h2 class="text-2xl text-gray-600 font-semibold mb-2">Instructions:</h2>
+                    <ul class="list-disc list-inside p-0 m-0 text-gray-500 text-sm sm:text-[16px]">
+                        <li>Don't count zero credit subjects.</li>
+                        <li>Give the correct CGPA/GPA/SGPA very carefully.</li>
+                        <li>Fill all the inputs carefully then calculate.</li>
+                        <li>In case any problem you can use reset button.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-indigo-400 py-5 px-2">
+        <div class="container text-center text-taupe-100">
+            <p>© 2026 <a class="hover:text-darkBlue transition" href="#">Pratik</a>. Designed & Developed with ❤️</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
